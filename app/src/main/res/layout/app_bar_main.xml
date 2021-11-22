@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            app:titleTextColor="#000000">
+
+            <ImageView
+                android:id="@+id/action_bar_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="25dp"
+                android:adjustViewBounds="true"
+                android:foregroundGravity="center"
+                android:src="@mipmap/twotone_location_on_black_48"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/action_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Dhanbad"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/home_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_bar"
+            android:drawableStart="@mipmap/baseline_search_black_24"
+            android:drawablePadding="15dp"
+            android:elevation="5dp"
+            android:gravity="start|center"
+            android:paddingStart="20dp"
+            android:paddingEnd="1dp"
+            android:text="Search for Doctors"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

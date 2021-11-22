@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techov8.medfer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="medFer"
+        android:roundIcon="@drawable/in_sure_plus_logo_32_bit"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.techov8.medfer.UserDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.AppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.UploadBillsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.CardRegistration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.ItemDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.ItemListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.techov8.medfer.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="medfer.page.link"
+                    android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.techov8.medfer.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.techov8.medfer.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashtheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

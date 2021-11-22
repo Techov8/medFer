@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "163069898088",
+    "firebase_url": "https://likedeal-care.firebaseio.com",
+    "project_id": "likedeal-care",
+    "storage_bucket": "likedeal-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163069898088:android:0356df0b57e160a5a9fadd",
+        "android_client_info": {
+          "package_name": "com.example.likedealcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163069898088-qali93fg5bk5g7mgkdedc44sd1c9fdcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.likedealcare",
+            "certificate_hash": "7640d9b0f0528ca80f17008f0fe076b245a5b77c"
+          }
+        },
+        {
+          "client_id": "163069898088-e5p7bgcr5dut2tu74mci38ojangp673o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLpvUWtbj3dl48fBpRsrP6oci2x2RPTGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163069898088-e5p7bgcr5dut2tu74mci38ojangp673o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

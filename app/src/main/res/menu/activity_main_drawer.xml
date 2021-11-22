@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_my_home"
+            android:icon="@mipmap/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_my_card"
+            android:icon="@drawable/twotone_event_black_48"
+            android:title="Appointments" />
+        <item
+            android:id="@+id/nav_live_offers"
+            android:icon="@drawable/deals"
+            android:title="Live Offers" />
+        <item
+            android:id="@+id/nav_my_bills"
+            android:icon="@drawable/baseline_article_black_48"
+            android:title="Bill Prescription" />
+        <item
+            android:id="@+id/nav_health_shop"
+            android:icon="?attr/actionModePasteDrawable"
+            android:title="Health Facts" />
+        <item
+            android:id="@+id/nav_my_wallet"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@mipmap/account"
+            android:title="@string/my_account" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:icon="@mipmap/policy"
+        android:title="@string/privacy_policy"/>
+        <item
+        android:id="@+id/nav_my_faqs"
+        android:icon="@mipmap/contact"
+        android:title="@string/faqs" />
+    <item
+        android:id="@+id/nav_sign_out"
+        android:icon="@mipmap/signout"
+        android:title="@string/Sign_out" />
+    </group>
+</menu>
